@@ -46,7 +46,6 @@ userSchema.methods.comparePassword = function(plainPassword) {
     return this.password === hash;
 }
 
-
 const User = mongoose.model('User', userSchema);
 
 module.exports = User;

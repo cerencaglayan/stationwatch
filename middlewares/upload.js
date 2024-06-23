@@ -1,9 +1,7 @@
 const multer = require("multer");
 
-// Dosya depolama konfigürasyonu
-const storage = multer.memoryStorage(); // Fotoğrafı bellekte tut
+const storage = multer.memoryStorage(); 
 
-// Dosya filtreleme
 const fileFilter = (req, file, cb) => {
   if (file.mimetype.startsWith("image/")) {
     cb(null, true);

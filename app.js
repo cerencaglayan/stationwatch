@@ -34,9 +34,6 @@ mongoose.connect(connectionString, {
   .catch((err)=> console.log(err));
 
 
-// MIDDLEWARE
-
-
 
 const port = process.env["PORT "] || 8000
 
