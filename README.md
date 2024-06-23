@@ -24,7 +24,7 @@ To set up the project locally:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/username/stationwatch.git
+    git clone https://github.com/cerencaglayan/stationwatch.git
     ```
 
 2. **Install the required dependencies**:
@@ -34,16 +34,8 @@ To set up the project locally:
     npm install
     ```
 
-3. **Configure the environment variables**:
 
-    Create a `.env` file with the following content:
-
-    ```plaintext
-    PORT=8000
-    MONGODB_URI="mongodb+srv://your_mongodb_user:your_mongodb_password@your_cluster.mongodb.net/"
-    ```
-
-4. **Start the application**:
+3. **Start the application**:
 
     ```bash
     node app.js
