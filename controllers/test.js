@@ -24,12 +24,28 @@ exports.createTest = async (req, res) => {
       const lab = await Lab.findById(req.body.lab);
 
       if (req.body.station != null) {
-        req.body.status = "active";
-        machine.isAvailable = false;
-        station.isAvailable = false;
+
+
+        if(station.isAvailable){
+          req.body.status = "active";
+          machine.isAvailable = false;
+          station.isAvailable = false;
+
+        }
+        else{
+
+          req.body.status = "pending";
+          machine.isAvailable = false;
+        }
+
         await machine.save();
         await station.save();
+
+
+
+
       } else {
+
         req.body.status = "passive";
         // await station.save();
         // await lab.save();

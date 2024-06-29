@@ -25,7 +25,6 @@ const connectionString ="mongodb+srv://bilgeurcukk:pE4oJ7SqzWqTFx33@cluster0.na6
 const xyz = "mongodb+srv://kaganyalim19:TZaminz93TSS9GVw@cluster0.cg21pkx.mongodb.net/"
 
 
-// CONNECT DATABASE
 
 mongoose.connect(connectionString, {
     useNewUrlParser: true,
